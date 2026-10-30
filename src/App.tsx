@@ -1,19 +1,46 @@
-import React from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import NavBar from './components/navbar.tsx'
+import Card from './components/card.tsx'
 
 function App() {
+        const cards = [ { 
+                          title: 'Développement web',
+                          content: 'Je crée es interfaces modernes et responsives avec HTML, CSS, JavaScript et React.',
+                          icon: '',
+                          link: '#competences',
+                        },
+                        {
+                          title: 'Mes projets',
+                          content: 'Découvrez mes projets personnels et les applications web que je développe.',
+                          icon: '',
+                          link: '#projets',
+                        }, 
+                        { 
+                          title: 'Ma formation',
+                          content: 'Je développe mes compétences techniques et j’apprends chaque jour de nouvelles technologies.',
+                          icon: '',
+                          link: '#formation',
+                        }, 
+        ];
 
   return (
     <>
+      <div className="pb-[20%]">  
         <NavBar></NavBar>
-        <div className="flex align-middle justify-center bg-gray-50">
-            <h2 className="text-blue-500 font-bold text-shadow-blue-100 text-shadow-md">hello, I'm Safidy</h2>
+      </div>
+        <div className="pl-[5%] pr-[5%] mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {cards.map((card) => (
+              <Card
+                key={card.title}
+                title={card.title}
+                content={card.content}
+                icon={card.icon}
+                link={card.link}
+              />
+            ))} 
         </div>
     </>
   )
 }
 
 export default App
+
