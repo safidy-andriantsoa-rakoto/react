@@ -1,25 +1,32 @@
 import NavBar from './components/navbar.tsx'
 import Card from './components/card.tsx'
+import type { LucideIcon } from 'lucide-react';
+import { BriefcaseBusinessIcon, EngineIcon, GlobeIcon, MonitorIcon, SchoolIcon } from 'lucide-react';
 
 function App() {
-        const cards = [ { 
-                          title: 'Développement web',
-                          content: 'Je crée es interfaces modernes et responsives avec HTML, CSS, JavaScript et React.',
-                          icon: '',
-                          link: '#competences',
-                        },
-                        {
-                          title: 'Mes projets',
-                          content: 'Découvrez mes projets personnels et les applications web que je développe.',
-                          icon: '',
-                          link: '#projets',
-                        }, 
-                        { 
-                          title: 'Ma formation',
-                          content: 'Je développe mes compétences techniques et j’apprends chaque jour de nouvelles technologies.',
-                          icon: '',
-                          link: '#formation',
-                        }, 
+        const cards: {
+            title: string,
+            content: string,
+            icon: LucideIcon,
+            link: string
+        }[] = [ { 
+            title: 'Développement web',
+            content: 'Je crée es interfaces modernes et responsives avec HTML, CSS, JavaScript et React.',
+            icon: BriefcaseBusinessIcon,
+            link: '#competences',
+            },
+            {
+              title: 'Mes projets',
+              content: 'Découvrez mes projets personnels et les applications web que je développe.',
+              icon: MonitorIcon,
+              link: '#projets',
+            }, 
+            { 
+              title: 'Ma formation',
+              content: 'Je développe mes compétences techniques et j’apprends chaque jour de nouvelles technologies.',
+              icon: SchoolIcon,
+              link: '#formation',
+            }, 
         ];
 
   return (

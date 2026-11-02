@@ -1,9 +1,15 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
+interface CardProps {
+  title: string;
+  content: string;
+  icon: LucideIcon;
+  link?: string;
+}
 
-function Card({ title, content, icon: Icon, link = '#' }) {
-return (
+function Card({ title, content, icon: Icon, link = '#' }: CardProps) {
+  return (
     <div className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl">
     
     <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-50 transition-transform duration-500 group-hover:scale-150" />
