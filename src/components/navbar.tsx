@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function Navbar() {
 const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +15,6 @@ return (
 <nav className="fixed top-0 left-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-md">
 <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-    {/* Logo */}
     <a
       href="#accueil"
       className="text-2xl font-bold tracking-tight text-blue-600"
@@ -23,7 +22,6 @@ return (
       My<span className="text-gray-900">Portfolio</span>.
     </a>
 
-    {/* Menu desktop */}
     <div className="hidden items-center gap-8 md:flex">
       {links.map((link) => (
         <a
@@ -36,7 +34,6 @@ return (
       ))}
     </div>
 
-    {/* Bouton contact desktop */}
     <a
       href="#contact"
       className="hidden rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700 md:inline-block"
@@ -44,7 +41,6 @@ return (
       Me contacter
     </a>
 
-    {/* Bouton menu mobile */}
     <button
       onClick={() => setMenuOpen(!menuOpen)}
       className="text-2xl text-gray-800 md:hidden"
@@ -55,7 +51,6 @@ return (
     </button>
   </div>
 
-  {/* Menu mobile */}
   {menuOpen && (
     <div className="border-t border-gray-200 bg-white px-6 py-4 md:hidden">
       {links.map((link) => (
