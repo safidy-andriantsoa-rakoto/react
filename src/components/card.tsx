@@ -1,12 +1,5 @@
-import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
-
-interface CardProps {
-  title: string;
-  content: string;
-  icon: LucideIcon;
-  link?: string;
-}
+import { CardProps } from '../interface/interface';
 
 function Card({ title, content, icon: Icon, link = '#' }: CardProps) {
   return (
