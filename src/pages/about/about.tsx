@@ -1,7 +1,12 @@
+import { SKILL_CATEGORIES, EXPERIENCES } from "../../const/lists";
+import { Check } from "lucide-react";
+
 function About(){
   return (
     <>
-     <div className="max-w-3xl space-y-4">
+      <div class="">
+
+         <div className="max-w-3xl space-y-4">
             <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
                 À Propos
               </span>
@@ -58,6 +63,7 @@ function About(){
                 ))}
               </div>
             </section>
+      </div>
     </>
   )
 }
