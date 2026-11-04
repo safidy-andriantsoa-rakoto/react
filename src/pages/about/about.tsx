@@ -1,5 +1,6 @@
 import { SKILL_CATEGORIES, EXPERIENCES } from "../../const/lists";
 import { Check } from "lucide-react";
+import Footer from "../../components/footer";
 
 function About(){
   return (
@@ -64,6 +65,7 @@ function About(){
               </div>
             </section>
       </div>
+      <Footer></Footer>
     </>
   )
 }

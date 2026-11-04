@@ -6,10 +6,9 @@ function Navbar() {
 
   const links = [
     { name: 'Accueil', href: '/' },
-    { name: 'À propos', href: '/apropos' },
-    { name: 'Compétences', href: '/competences' },
+    { name: 'À propos', href: '/about' },
     { name: 'Projets', href: '/projects' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Contact', href: '/contacts' },
   ];
 
 return (
