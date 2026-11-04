@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import React from "react";
 
 export interface CardProps {
   title: string;
@@ -21,7 +22,7 @@ export interface Project {
 
 export interface SkillCategory {
   title: string;
-  icon: LucideIcon;
+  icon: React.ReactNode;
   skills: string[];
 }
 

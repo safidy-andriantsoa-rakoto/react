@@ -1,9 +1,12 @@
 import { 
   BriefcaseBusinessIcon,
+  Cpu,
+  Globe,
   MonitorIcon,
-  SchoolIcon 
+  SchoolIcon, 
+  Terminal
 } from "lucide-react";
-import type { CardProps } from "../interface/interface";
+import type { CardProps, ExperienceItem, Project, SkillCategory } from "../interface/interface";
 
 export const cards: CardProps[] = [
   { 
@@ -25,8 +28,8 @@ export const cards: CardProps[] = [
     link: '#formation',
   }, 
 ];
-
-const PROJECTS: Project[] = [
+ 
+export const PROJECTS: Project[] = [
   {
     id: 1,
     title: "SaaS Analytics Dashboard",
