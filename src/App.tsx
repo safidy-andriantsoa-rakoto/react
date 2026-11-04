@@ -1,19 +1,17 @@
-// import NavBar from './components/navbar.tsx'
-// import Card from './components/card.tsx'
-// import { cards } from './const/lists.tsx'
-
 import Home from "./pages/home/home"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Navbar from "./components/navbar"
 import Projects from "./pages/projects/projects"
+import About from "./pages/about/about"
 
 function App() {
   return (
    <BrowserRouter>
     <Navbar/>
       <Routes>
-        <Route path="/" element={<Home></Home>}/>
-        <Route path="/projects" element={<Projects></Projects>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/abouts" element={<About/>}/>
       </Routes>
     </BrowserRouter>
   )
