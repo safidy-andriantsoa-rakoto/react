@@ -8,7 +8,7 @@ function Navbar() {
     { name: 'Accueil', href: '/' },
     { name: 'À propos', href: '/about' },
     { name: 'Projets', href: '/projects' },
-    { name: 'Contact', href: '/contacts' },
+    { name: 'Contact', href: '/contact' },
   ];
 
 return (
