@@ -16,7 +16,7 @@ function Projects(){
           />
         ))} 
       </div>
-      <Footer/>
+      <Footer></Footer>
     </>
   )
 }

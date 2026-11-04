@@ -1,5 +1,4 @@
 
-
 function Footer(){
   return (
     <footer className="bg-white border-t border-slate-200 py-10 mt-20">
