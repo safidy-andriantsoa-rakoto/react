@@ -20,7 +20,7 @@ return (
           to="/"
           className="text-2xl font-bold tracking-tight text-blue-600"
         >
-          Dev<span className="text-gray-900">Safidy</span>.
+          Dev_<span className="text-gray-900">Safidy</span>.
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
