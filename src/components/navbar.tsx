@@ -26,7 +26,6 @@ return (
         <div className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
             <Link
-              key={link.name}
               to={link.href}
               className="text-sm font-medium text-gray-600 transition-colors hover:text-blue-600"
             >
@@ -35,12 +34,12 @@ return (
           ))}
         </div>
 
-        <a
+        <Link
           href="#contact"
           className="hidden rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700 md:inline-block"
         >
           Me contacter
-        </a>
+        </Link>
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -55,23 +54,23 @@ return (
       {menuOpen && (
         <div className="border-t border-gray-200 bg-white px-6 py-4 md:hidden">
           {links.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               onClick={() => setMenuOpen(false)}
               className="block py-3 text-gray-700 transition hover:text-blue-600"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
 
-          <a
+          <Link
             href="#contact"
             onClick={() => setMenuOpen(false)}
             className="mt-3 block rounded-lg bg-blue-600 px-5 py-3 text-center font-semibold text-white hover:bg-blue-700"
           >
             Me contacter
-          </a>
+          </Link>
         </div>
       )}
   </nav>
