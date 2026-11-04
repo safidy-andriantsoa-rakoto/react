@@ -1,13 +1,14 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
-    { name: 'Accueil', href: '#accueil' },
+    { name: 'Accueil', href: '/' },
     { name: 'À propos', href: '#apropos' },
     { name: 'Compétences', href: '#competences' },
-    { name: 'Projets', href: '#projets' },
+    { name: 'Projets', href: '/projets' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -15,22 +16,22 @@ return (
   <nav className="fixed top-0 left-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-md">
     <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-        <a
-          href="#accueil"
+        <Link
+          to="/"
           className="text-2xl font-bold tracking-tight text-blue-600"
         >
           Dev<span className="text-gray-900">Safidy</span>.
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="text-sm font-medium text-gray-600 transition-colors hover:text-blue-600"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
 
