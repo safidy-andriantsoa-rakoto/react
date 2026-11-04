@@ -6,10 +6,10 @@ function Navbar() {
 
   const links = [
     { name: 'Accueil', href: '/' },
-    { name: 'À propos', href: '#apropos' },
-    { name: 'Compétences', href: '#competences' },
-    { name: 'Projets', href: '/projets' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'À propos', href: '/apropos' },
+    { name: 'Compétences', href: '/competences' },
+    { name: 'Projets', href: '/projects' },
+    { name: 'Contact', href: '/contact' },
   ];
 
 return (
@@ -33,7 +33,6 @@ return (
             </Link>
           ))}
         </div>
-
         <Link
           href="#contact"
           className="hidden rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700 md:inline-block"

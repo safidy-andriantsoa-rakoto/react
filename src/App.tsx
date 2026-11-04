@@ -10,12 +10,11 @@ import Projects from "./pages/projects/projects"
 function App() {
   return (
    <BrowserRouter>
-    <Navbar>
+    <Navbar/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/" element={<Home></Home>}/>
+        <Route path="/projects" element={<Projects></Projects>}/>
       </Routes>
-    </Navbar>
     </BrowserRouter>
   )
 }
