@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { CheckCircle2, Link2, Mail, MapPin, Send } from 'lucide-react';
-import Footer from '../../components/footer';
 
 export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
@@ -17,10 +16,10 @@ export default function Contact() {
 
   return (
   <>
-    <div className="px-[8%] pt-[10%] space-y-12 animate-fadeIn max-w-4xl mx-auto">
+    <div className="px-[8%] sm:pt-[10%] md:lg:pt-[10%] space-y-12 animate-fadeIn max-w-4xl mx-auto">
 
-      <div className="text-center space-y-3">
-        <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+      <div className="text-center space-y-4">
+        <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 my-10 rounded-full border border-blue-200">
           Contact
         </span>
         <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
@@ -59,7 +58,6 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Contact Form */}
         <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm md:col-span-2">
           {formSubmitted ? (
             <div className="py-12 text-center space-y-4">
@@ -131,7 +129,6 @@ export default function Contact() {
       </div>
 
     </div>
-    <Footer></Footer>
   </>
   );
 }

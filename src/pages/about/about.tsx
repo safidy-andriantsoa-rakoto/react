@@ -9,7 +9,7 @@ export default function About() {
     <div className="px-[8%] pt-[10%] space-y-16 animate-fadeIn">
 
       <div className="max-w-3xl space-y-4">
-        <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+        <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 my-5 rounded-full border border-blue-200">
           À Propos
         </span>
         <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
