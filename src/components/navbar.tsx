@@ -55,7 +55,7 @@ return (
           {links.map((link) => (
             <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               onClick={() => setMenuOpen(false)}
               className="block py-3 text-gray-700 transition hover:text-blue-600"
             >
@@ -64,7 +64,7 @@ return (
           ))}
 
           <Link
-            href="#contact"
+            to="/contact"
             onClick={() => setMenuOpen(false)}
             className="mt-3 block rounded-lg bg-blue-600 px-5 py-3 text-center font-semibold text-white hover:bg-blue-700"
           >
