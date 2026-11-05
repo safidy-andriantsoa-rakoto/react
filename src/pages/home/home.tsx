@@ -1,11 +1,11 @@
-import { useNavigate } from "react-router-dom";
 import Footer from "../../components/footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { handleNavigation } from "../../utils/utils";
 
 function Home() {
   return (
     <>
-      <div class="md:pt-[5%] lg:pt-[5%] block">
+      <div className="px-[8%] pt-[5%] space-y-10 animate-fadeIn">
         <section className="pt-8 md:pt-16 flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-blue-200 bg-blue-50 text-blue-700 text-xs font-semibold tracking-wide shadow-xs">
@@ -26,13 +26,13 @@ function Home() {
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <button
-                onClick={() => useNavigate('/projects')}
+                onClick={() => handleNavigation('/projects')}
                 className="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 flex items-center gap-2 active:scale-95 transition-all"
               >
                 Explorer mes projets <ArrowRight className="w-4 h-4" />
               </button>
               <button
-                onClick={() => useNavigate('/contact')}
+                onClick={() => handleNavigation('/contact')}
                 className="px-6 py-3.5 rounded-xl border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 font-semibold text-sm shadow-xs active:scale-95 transition-all"
               >
                 Prendre contact
@@ -85,8 +85,8 @@ function Home() {
 
         <section className="pt-20 px-[5%] grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm text-center">
-            <div className="text-3xl font-black text-blue-600 mb-1"></div>
-            <div className="text-xs font-medium text-slate-500 uppercase tracking-wider">D'Expérience en Développement</div>
+            <div className="text-3xl font-black text-blue-600 mb-1">Commun-core 42</div>
+            <div className="text-xs font-medium text-slate-500 uppercase tracking-wider">Peer-to-peer Learing</div>
           </div>
           <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm text-center">
             <div className="text-3xl font-black text-blue-600 mb-1">5 Projets</div>

@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Link2, ExternalLink } from 'lucide-react';
 import { PROJECTS } from '../../const/lists';
+import Footer from '../../components/footer';
 
 export default function Projects() {
   const [projectCategory, setProjectCategory] = useState<string>('All');
 
   return (
+  <>
     <div className="px-[8%] pt-[10%] space-y-10 animate-fadeIn">
 
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -48,32 +50,34 @@ export default function Projects() {
                   </span>
                 </div>
                 <h3 className="text-xl font-bold text-slate-900">{project.title}</h3>
-                <p className="text-slate-600 text-sm">{project.description}</p>
-              </div>
-
-              <div className="space-y-4 pt-2">
-                <div className="flex flex-wrap gap-1.5">
-                  {project.tags.map((tag) => (
-                    <span key={tag} className="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-medium">
-                      {tag}
-                    </span>
-                  ))}
+                  <p className="text-slate-600 text-sm">{project.description}</p>
                 </div>
 
-                <div className="flex items-center justify-between pt-4 border-t border-slate-100 text-xs">
-                  <a href={project.githubUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-slate-600 hover:text-slate-900 font-medium">
-                    <Link2 className="w-4 h-4" /> Dépôt GitHub
-                  </a>
-                  <a href={project.liveUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-blue-600 font-semibold hover:text-blue-700">
-                    Démo Live <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+                <div className="space-y-4 pt-2">
+                  <div className="flex flex-wrap gap-1.5">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-medium">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center justify-between pt-4 border-t border-slate-100 text-xs">
+                    <a href={project.githubUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-slate-600 hover:text-slate-900 font-medium">
+                      <Link2 className="w-4 h-4" /> Dépôt GitHub
+                    </a>
+                    <a href={project.liveUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-blue-600 font-semibold hover:text-blue-700">
+                      Démo Live <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-    </div>
+      </div>
+    <Footer></Footer>
+  </>
   );
 }

@@ -1,9 +1,11 @@
 import { Check } from 'lucide-react';
 import { SKILL_CATEGORIES } from '../../const/lists';
 import { EXPERIENCES } from '../../const/lists';
+import Footer from '../../components/footer';
 
 export default function About() {
   return (
+  <>
     <div className="px-[8%] pt-[10%] space-y-16 animate-fadeIn">
 
       <div className="max-w-3xl space-y-4">
@@ -66,5 +68,7 @@ export default function About() {
       </section>
 
     </div>
+    <Footer></Footer>
+  </>
   );
 }
