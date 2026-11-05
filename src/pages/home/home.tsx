@@ -5,8 +5,8 @@ import { handleNavigation } from "../../utils/utils";
 function Home() {
   return (
     <>
-      <div className="px-[8%] pt-[5%] space-y-10 animate-fadeIn">
-        <section className="pt-8 md:pt-16 flex flex-col lg:flex-row items-center justify-between gap-8">
+      <div className="px-[8%] pt-[6%] space-y-10 animate-fadeIn">
+        <section className="pt-8 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="flex-1 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-blue-200 bg-blue-50 text-blue-700 text-xs font-semibold tracking-wide shadow-xs">
               <span className="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>

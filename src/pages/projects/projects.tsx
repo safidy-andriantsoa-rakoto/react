@@ -8,14 +8,14 @@ export default function Projects() {
 
   return (
   <>
-    <div className="px-[8%] pt-[10%] space-y-10 animate-fadeIn">
+    <div className="px-[8%] pt-[8%] space-y-10 animate-fadeIn">
 
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="space-y-2">
           <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
             Portfolio
           </span>
-          <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h1 className="pt-5 text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
             Tous les Projets
           </h1>
           <p className="text-slate-600 text-sm">Découvrez l'ensemble de mes travaux récents.</p>
