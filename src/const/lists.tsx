@@ -97,10 +97,10 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 export const EXPERIENCES: ExperienceItem[] = [
   {
     period: "Mai 2026 - Septembre 2026",
-    role: "Développeur Full-Stack",
+    role: "Stage en développeur Full-Stack",
     company: "Industrie du secteur textile",
-    description: "Conception et développement de solutions SaaS sur-mesure pour des clients internationaux. Optimisation de l'architecture React & NestJS.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "NestJS", "Laravel", "Docker"]
+    description: "Conception et évolution d’un ERP web full-stack sous React, TypeScript et NestJS, axé sur l’optimisation des processus métiers. Développement d'endpoints REST backend, modélisation des données (PostgreSQL/MySQL via TypeORM) et renforcement de la sécurité de l'authentification avec la mise en place d'un SSO (Single Sign-On) entre les applications. Optimisation globale des performances, refactorisation du code et résolution de bugs.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "NestJS", "Laravel", "Docker", "AWS S3"]
   },
   {
     period: "2022 - 2026",
@@ -108,6 +108,13 @@ export const EXPERIENCES: ExperienceItem[] = [
     company: "42Antananarivo",
     description: "Ecole avec la pédagogie Pear-to-Peer Learning.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Fastify","REST APIs", "C/C++"]
+  },
+  {
+    period: "2021 - 2023",
+    role: "DTS: Science informatique",
+    company: "CNTEMAD",
+    description: "Université télé-enseignement de Madagascar.",
+    technologies: []
   }
 ];
 
