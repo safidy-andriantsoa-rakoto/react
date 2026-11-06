@@ -26,7 +26,7 @@ function Home() {
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <button
-                onClick={() => handleNavigation('/projects')}
+                onClick={() => handleNavigation('/')}
                 className="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 flex items-center gap-2 active:scale-95 transition-all"
               >
                 Explorer mes projets <ArrowRight className="w-4 h-4" />
@@ -41,7 +41,7 @@ function Home() {
 
             <div className="pt-8 border-t border-slate-200 flex flex-wrap items-center justify-center lg:justify-start gap-2.5 text-xs">
               <span className="text-slate-500 font-semibold mr-2">Technologies clés:</span>
-              {["React", "TypeScript", "Tailwind CSS", "NestJS", "Docker", "C++"].map((tech) => (
+              {["React", "TypeScript", "Tailwind CSS", "Node.js", "Fastify", "NestJS", "Docker", "C/C++"].map((tech) => (
                 <span key={tech} className="px-3 py-1 bg-white border border-slate-200 shadow-2xs rounded-lg font-medium text-slate-700">
                   {tech}
                 </span>

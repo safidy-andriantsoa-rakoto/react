@@ -80,34 +80,34 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: "Frontend",
     icon: <Globe className="w-5 h-5 text-blue-600" />,
-    skills: ["React 18", "TypeScript", "Tailwind CSS", "Next.js", "HTML5/CSS3", "Redux / Zustand"]
+    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "HTML5/CSS3"]
   },
   {
     title: "Backend & Systems",
     icon: <Terminal className="w-5 h-5 text-blue-600" />,
-    skills: ["Node.js / Express", "NestJS", "C++", "REST APIs", "PostgreSQL", "Prisma ORM"]
+    skills: ["Node.js / Express", "NestJS", "Fastify", "C/C++", "REST APIs", "PostgreSQL/MySQL/SQLite", "Prisma ORM"]
   },
   {
-    title: "DevOps & Tools",
+    title: "Cloud, DevOps & Tools",
     icon: <Cpu className="w-5 h-5 text-blue-600" />,
-    skills: ["Docker", "Git & GitHub", "Vite / Webpack", "CI/CD Pipelines", "Linux / Bash", "Vercel"]
+    skills: ["Docker", "Git & GitHub", "Vite", "AWS: S3, EC2", "Linux / Bash", "Vercel"]
   }
 ];
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
-    period: "2024 - Présent",
-    role: "Développeur Full-Stack Lead",
-    company: "Tech Solutions Studio",
+    period: "Mai 2026 - Septembre 2026",
+    role: "Développeur Full-Stack",
+    company: "Industrie du secteur textile",
     description: "Conception et développement de solutions SaaS sur-mesure pour des clients internationaux. Optimisation de l'architecture React & NestJS.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "NestJS", "Docker"]
+    technologies: ["React", "TypeScript", "Tailwind CSS", "NestJS", "Laravel", "Docker"]
   },
   {
-    period: "2022 - 2024",
-    role: "Développeur Frontend & ERP",
-    company: "Digital Dynamics",
-    description: "Création d'interfaces web réactives et intégration de modules de gestion d'entreprise haute performance.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "REST APIs", "C++"]
+    period: "2022 - 2026",
+    role: "Tronc-commun",
+    company: "42Antananarivo",
+    description: "Ecole avec la pédagogie Pear-to-Peer Learning.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Fastify","REST APIs", "C/C++"]
   }
 ];
 
