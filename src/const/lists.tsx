@@ -31,48 +31,33 @@ export const cards: CardProps[] = [
  
 export const PROJECTS: Project[] = [
   {
-    id: 1,
-    title: "SaaS Analytics Dashboard",
-    description: "Real-time data visualization platform built with React, TypeScript, and Tailwind CSS. Integrated REST APIs and interactive data charts.",
-    category: "Full-Stack",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Recharts"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    featured: true
+        id: 1,
+        title: "ft_transcendence",
+        description: "Plateforme de réseau social et de tchat en temps réel avec messagerie instantanée, système d'amis et gestion d'utilisateurs.",
+        category: "Full-Stack",
+        tags: ["React", "TypeScript", "Fastify", "Socket.io", "Prisma", "PostgreSQL", "Docker"],
+        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+        githubUrl: "https://github.com",
+        liveUrl: "https://example.com",
+        featured: true
   },
   {
-    id: 2,
-    title: "AI Workspace Assistant",
-    description: "Productivity platform helping software teams summarize pull requests and automate developer documentation workflows.",
-    category: "Full-Stack",
-    tags: ["React", "TypeScript", "Tailwind CSS", "NestJS", "OpenAI"],
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    featured: true
+        id: 2,
+        title: "Webserver C++ (webserv)",
+        description: "Serveur HTTP/1.1 monolithique et non-bloquant développé en C++98 avec gestion des I/O via Epoll et support des méthodes GET, POST, DELETE.",
+        category: "Systems / C++",
+        tags: ["C++", "Epoll", "Network Programming", "HTTP/1.1", "Sockets"],
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+        githubUrl: "https://github.com",
+        liveUrl: "https://github.com",
+        featured: true
   },
   {
-    id: 3,
-    title: "High-Performance Cache Engine",
-    description: "In-memory key-value storage engine implemented in C++ with multi-threading support and LRU eviction policy.",
-    category: "Systems / C++",
-    tags: ["C++20", "Multi-threading", "Data Structures", "Benchmarking"],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-    githubUrl: "https://github.com",
-    liveUrl: "https://github.com",
-    featured: false
-  },
-  {
-    id: 4,
-    title: "E-Commerce Design System",
-    description: "Accessible, highly customizable UI component library crafted with Tailwind CSS and React for rapid frontend development.",
-    category: "Frontend",
-    tags: ["React", "Tailwind CSS", "Storybook", "TypeScript"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    featured: false
+        id: 3,                                                                                          title: "Projets POO C++",
+        description: "Série de modules pratiques explorant les concepts avancés de la programmation orientée objet en C++ (encapsulation, héritage, polymorphisme, templates STL).",                    category: "Systems / C++",                                                                      tags: ["C++", "OOP", "STL", "Memory Management", "Algorithms"],                                 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        githubUrl: "https://github.com",
+        liveUrl: "https://github.com",
+        featured: false
   }
 ];
 
