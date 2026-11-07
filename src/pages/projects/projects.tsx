@@ -62,14 +62,22 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <div className="flex items-center justify-between pt-4 border-t border-slate-100 text-xs">
-                    <a href={project.githubUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-slate-600 hover:text-slate-900 font-medium">
+                  {
+                    project.githubUrl &&
+                    <>
+                    <div className="flex items-center justify-between pt-4 border-t border-slate-100 text-xs">
+                      <a href={project.githubUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-slate-600 hover:text-slate-900 font-medium">
                       <Link2 className="w-4 h-4" /> Dépôt GitHub
-                    </a>
-                    <a href={project.liveUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-blue-600 font-semibold hover:text-blue-700">
+                     </a>
+                    {
+                      project.liveUrl && 
+                      <a href={project.liveUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-blue-600 font-semibold hover:text-blue-700">
                       Démo Live <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
+                      </a>
+                    }
+                    </div>
+                  </>
+                  }
                 </div>
               </div>
             </div>
