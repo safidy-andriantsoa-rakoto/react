@@ -37,8 +37,8 @@ export const PROJECTS: Project[] = [
         category: "Full-Stack",
         tags: ["React", "TypeScript", "Fastify", "Socket.io", "Prisma", "PostgreSQL", "Docker"],
         image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
-        githubUrl: "https://github.com",
-        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/safidy-andriantsoa-rakoto/ft_transcendence",
+        liveUrl: "",
         featured: true
   },
   {
@@ -48,15 +48,15 @@ export const PROJECTS: Project[] = [
         category: "Systems / C++",
         tags: ["C++", "Epoll", "Network Programming", "HTTP/1.1", "Sockets"],
         image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-        githubUrl: "https://github.com",
-        liveUrl: "https://github.com",
+        githubUrl: "https://github.com/safidy-andriantsoa-rakoto/WEBSERVER",
+        liveUrl: "",
         featured: true
   },
   {
         id: 3,                                                                                          title: "Projets POO C++",
         description: "Série de modules pratiques explorant les concepts avancés de la programmation orientée objet en C++ (encapsulation, héritage, polymorphisme, templates STL).",                    category: "Systems / C++",                                                                      tags: ["C++", "OOP", "STL", "Memory Management", "Algorithms"],                                 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-        githubUrl: "https://github.com",
-        liveUrl: "https://github.com",
+        githubUrl: "",
+        liveUrl: "",
         featured: false
   }
 ];
