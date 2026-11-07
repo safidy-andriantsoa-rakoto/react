@@ -22,7 +22,7 @@ export default function Projects() {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {['All', 'Full-Stack', 'Frontend', 'Systems / C++'].map((category) => (
+          {['All', 'Full-Stack', 'Systems', 'POO / C++', 'Graphics / C'].map((category) => (
             <button
               key={category}
               onClick={() => setProjectCategory(category)}

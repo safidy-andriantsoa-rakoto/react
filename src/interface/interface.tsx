@@ -12,7 +12,7 @@ export interface Project {
   id: number;
   title: string;
   description: string;
-  category: 'Full-Stack' | 'Frontend' | 'Systems / C++';
+  category: 'Full-Stack' | 'Systems' | 'Graphics / C' | 'POO / C++';
   tags: string[];
   image: string;
   githubUrl: string;

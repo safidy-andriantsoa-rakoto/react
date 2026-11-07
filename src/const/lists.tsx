@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
   {
         id: 1,
         title: "ft_transcendence",
-        description: "Plateforme de réseau social et de tchat en temps réel avec messagerie instantanée, système d'amis et gestion d'utilisateurs.",
+        description: "Plateforme de réseau social et de tchat en temps réel développée en équipe, avec messagerie instantanée, système d'amis et gestion d'utilisateurs.",
         category: "Full-Stack",
         tags: ["React", "TypeScript", "Fastify", "Socket.io", "Prisma", "PostgreSQL", "Docker"],
         image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
@@ -44,8 +44,8 @@ export const PROJECTS: Project[] = [
   {
         id: 2,
         title: "Webserver C++ (webserv)",
-        description: "Serveur HTTP/1.1 monolithique et non-bloquant développé en C++98 avec gestion des I/O via Epoll et support des méthodes GET, POST, DELETE.",
-        category: "Systems / C++",
+        description: "Serveur HTTP/1.1 monolithique et non-bloquant développé en binôme en C++98 avec gestion des I/O via Epoll et support des méthodes GET, POST, DELETE.",
+        category: "Systems",
         tags: ["C++", "Epoll", "Network Programming", "HTTP/1.1", "Sockets"],
         image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
         githubUrl: "https://github.com/safidy-andriantsoa-rakoto/WEBSERVER",
@@ -53,11 +53,37 @@ export const PROJECTS: Project[] = [
         featured: true
   },
   {
-        id: 3,                                                                                          title: "Projets POO C++",
-        description: "Série de modules pratiques explorant les concepts avancés de la programmation orientée objet en C++ (encapsulation, héritage, polymorphisme, templates STL).",                    category: "Systems / C++",                                                                      tags: ["C++", "OOP", "STL", "Memory Management", "Algorithms"],                                 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-        githubUrl: "",
-        liveUrl: "",
-        featured: false
+    id: 3,
+    title: "Projets POO C++",
+    description: "Série de modules pratiques explorant les concepts avancés de la programmation orientée objet en C++ (encapsulation, héritage, polymorphisme, templates STL).",
+    category: "POO / C++",
+    tags: ["C++", "OOP", "STL", "Memory Management", "Algorithms"],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    githubUrl: "",
+    liveUrl: "",
+    featured: false
+  },
+  {
+    id: 4,
+    title: "Minishell",
+    description: "Interpréteur de commandes (shell) développé en binôme en C, reproduisant le comportement de Bash avec gestion des processus, signaux, pipes et redirections.",
+    category: "Systems",
+    tags: ["C", "Unix", "Processes", "Signals", "Pipes", "Syscalls"],
+    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80",
+    githubUrl: "",
+    liveUrl: "",
+    featured: false
+  },
+  {
+    id: 5,
+    title: "Cub3D",
+    description: "Moteur graphique 3D en Raycasting développé en binôme en C avec la bibliothèque MiniLibX, inspiré du célèbre jeu Wolfenstein 3D.",
+    category: "Graphics / C",
+    tags: ["C", "MiniLibX", "Raycasting", "Mathematics", "Geometry", "Computer Graphics"],
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    githubUrl: "",
+    liveUrl: "",
+    featured: false
   }
 ];
 
@@ -91,7 +117,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     period: "2022 - 2026",
     role: "Tronc-commun",
     company: "42Antananarivo",
-    description: "Ecole avec la pédagogie Pear-to-Peer Learning.",
+    description: "Une école avec la pédagogie Peer-to-Peer Learning : sans professeurs ni cours théoriques, on apprend en réalisant des projets concrets et en s'aidant entre élèves.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Fastify","REST APIs", "C/C++"]
   },
   {
