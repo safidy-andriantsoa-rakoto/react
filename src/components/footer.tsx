@@ -12,6 +12,14 @@ function Footer(){
               Safidy &copy; {new Date().getFullYear()} — Portfolio React & Tailwind CSS.
             </span>
           </div>
+
+          <div className="text-xs font-medium text-slate-500">
+            Étudiant à{" "}
+              <a
+                  href="https://42antananarivo.mg"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-600 font-semibold hover:underline transition-all"                                                                                                >                                                                                          42 Antananarivo                                                                </a>                                                                            </div>
         </div>
       </footer>
   )
