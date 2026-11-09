@@ -1,8 +1,10 @@
 import Footer from "../../components/footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { handleNavigation } from "../../utils/utils";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="px-[8%] pt-[6%] space-y-10 animate-fadeIn">
@@ -26,13 +28,13 @@ function Home() {
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <button
-                onClick={() => handleNavigation('/')}
+                onClick={() => navigate('/projects')}
                 className="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 flex items-center gap-2 active:scale-95 transition-all"
               >
                 Explorer mes projets <ArrowRight className="w-4 h-4" />
               </button>
               <button
-                onClick={() => handleNavigation('/contact')}
+                onClick={() => navigate('/contact')}
                 className="px-6 py-3.5 rounded-xl border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 font-semibold text-sm shadow-xs active:scale-95 transition-all"
               >
                 Prendre contact

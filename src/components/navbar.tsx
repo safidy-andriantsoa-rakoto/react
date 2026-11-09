@@ -20,7 +20,7 @@ return (
           className="text-2xl font-bold tracking-tight text-blue-600"
         >
           Dev{'>'}<span className="text-gray-900">Safidy</span>.
-          <span className="ml-1 inline-block w-1 h-5 bg-green-500 animate-pulse"></span>
+          <span className="ml-1 inline-block w-1 h-5 bg-blue-600 animate-pulse"></span>
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
