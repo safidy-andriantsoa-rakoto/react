@@ -4,24 +4,27 @@ import Footer from '../../components/footer';
 import emailjs from '@emailjs/browser';
 import { EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from '../../const/lists';
 
+emailjs.init({
+    publicKey: EMAILJS_PUBLIC_KEY,
+    limitRate: {
+    id: 'waitjs',
+    throttle: 60000
+    },
+    blockList: {
+      watchVariable: 'from_email'
+    }
+});
+
 export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
-
-  emailjs.init({
-        publicKey: EMAILJS_PUBLIC_KEY,
-        limitRate: {
-        id: 'waitjs',
-        throttle: 60000
-        },
-        blockList: {
-          watchVariable: 'from_email'
-        }
-      });
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' }); 
+  const [isWait, setWait] = useState<boolean>(false); 
 
   const handleContactSubmit = async (
   e: React.FormEvent<HTMLFormElement>
   ) => {
+    if(isWait) return;
+    setWait(true)
     e.preventDefault();
 
     try {
@@ -40,7 +43,7 @@ export default function Contact() {
       );
 
       console.log("Email envoyé :", result.text);
-
+      setWait(false)
       setFormSubmitted(true);
 
       window.setTimeout(() => {
@@ -51,7 +54,7 @@ export default function Contact() {
           subject: "",
           message: "",
         });
-      }, 4000);
+      }, 60000);
 
     } catch (error) {
       console.error("Erreur EmailJS :", error);
@@ -163,9 +166,10 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-md shadow-blue-600/20 active:scale-95 transition-all flex items-center justify-center gap-2"
+                className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-md shadow-blue-600/20 active:scale-95 transition-all flex items-center justify-center gap-2 disabled:blue-300"
+                disabled={isWait}
               >
-                <Send className="w-4 h-4" /> Envoyer le message
+                <Send className="w-4 h-4" />{ isWait ? "...": "Envoyer le message" }
               </button>
             </form>
           )}
