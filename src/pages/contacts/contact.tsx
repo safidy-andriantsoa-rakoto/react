@@ -8,6 +8,17 @@ export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
 
+  emailjs.init({
+        publicKey: EMAILJS_PUBLIC_KEY,
+        limitRate: {
+        id: 'waitjs',
+        throttle: 60000
+        },
+        blockList: {
+          watchVariable: 'from_email'
+        }
+      });
+
   const handleContactSubmit = async (
   e: React.FormEvent<HTMLFormElement>
   ) => {
