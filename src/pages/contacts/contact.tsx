@@ -70,7 +70,7 @@ export default function Contact() {
           <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-1">
             <Mail className="w-5 h-5 text-blue-600 mb-2" />
             <div className="text-xs font-semibold text-slate-500 uppercase">Email</div>
-            <div className="text-sm font-bold text-slate-900">dev.safidy.rakotoarimanana@gmail.com</div>
+            <div className="text-sm font-bold text-slate-900 overflow-auto">dev.safidy.rakotoarimanana@gmail.com</div>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-1">
