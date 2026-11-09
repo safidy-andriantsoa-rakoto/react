@@ -1,18 +1,51 @@
 import { useState } from 'react';
 import { CheckCircle2, Link2, Mail, MapPin, Send } from 'lucide-react';
 import Footer from '../../components/footer';
+import { emailjs } from '@emailjs/browser';
+import { EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from '../../const/lists';
 
 export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
 
-  const handleContactSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleContactSubmit = async (
+  e: React.FormEvent<HTMLFormElement>
+  ) => {
     e.preventDefault();
-    setFormSubmitted(true);
-    window.setTimeout(() => {
-      setFormSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 4000);
+
+    try {
+      const result = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        {
+          publicKey: EMAILJS_PUBLIC_KEY,
+        }
+      );
+
+      console.log("Email envoyé :", result.text);
+
+      setFormSubmitted(true);
+
+      window.setTimeout(() => {
+        setFormSubmitted(false);
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      }, 4000);
+
+    } catch (error) {
+      console.error("Erreur EmailJS :", error);
+      alert("Une erreur est survenue lors de l'envoi du message.");
+    }
   };
 
   return (
