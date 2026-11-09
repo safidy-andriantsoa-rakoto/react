@@ -3,6 +3,7 @@ import { CheckCircle2, Link2, Mail, MapPin, Send } from 'lucide-react';
 import Footer from '../../components/footer';
 import emailjs from '@emailjs/browser';
 import { EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from '../../const/lists';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 
 emailjs.init({
     publicKey: EMAILJS_PUBLIC_KEY,
@@ -96,11 +97,11 @@ export default function Contact() {
           <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
             <div className="text-xs font-semibold text-slate-500 uppercase">Réseaux Sociaux</div>
             <div className="flex items-center space-x-3 text-slate-700">
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="p-2 bg-slate-100 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
-                <Link2 className="w-5 h-5" />
+              <a href="https://github.com/safidy-andriantsoa-rakoto" target="_blank" rel="noreferrer" className="p-2 bg-slate-100 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                <FaGithub className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-2 bg-slate-100 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
-                <Link2 className="w-5 h-5" />
+              <a href="https://www.linkedin.com/in/rakotoarimanana-safidy-andriantsoa-28845225b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="p-2 bg-slate-100 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                <FaLinkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
