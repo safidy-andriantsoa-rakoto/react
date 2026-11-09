@@ -105,7 +105,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: "Cloud, DevOps & Tools",
     icon: <Cpu className="w-5 h-5 text-blue-600" />,
-    skills: ["Docker", "Git & GitHub", "Vite", "AWS: S3, EC2", "Linux / Bash", "Vercel"]
+    skills: ["Docker", "Git & GitHub", "AWS: S3, EC2", "Linux / Bash", "DBeaver"]
   }
 ];
 
