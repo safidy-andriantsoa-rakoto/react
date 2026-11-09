@@ -6,7 +6,7 @@ import Footer from '../../components/footer';
 export default function About() {
   return (
   <>
-    <div className="px-[8%] pt-[8%] space-y-16 animate-fadeIn">
+    <div className="px-[8%] pt-[25%] sm:md:pt-[12%] space-y-16 animate-fadeIn">
 
       <div className="max-w-3xl space-y-4">
         <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 my-5 rounded-full border border-blue-200">

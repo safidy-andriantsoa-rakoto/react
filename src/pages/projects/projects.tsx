@@ -8,7 +8,7 @@ export default function Projects() {
 
   return (
   <>
-    <div className="px-[8%] pt-[8%] space-y-10 animate-fadeIn">
+    <div className="px-[8%] pt-[20%] sm:md:pt-[12%] space-y-10 animate-fadeIn">
 
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="space-y-2">

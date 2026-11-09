@@ -65,7 +65,7 @@ export default function Contact() {
 
   return (
   <>
-    <div className="px-[2%] pt-[8%] space-y-12 animate-fadeIn max-w-4xl mx-auto">
+    <div className="px-[2%] pt-[20%] sm:md:pt-[12%] space-y-12 animate-fadeIn max-w-4xl mx-auto">
 
       <div className="text-center space-y-4">
         <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 my-10 rounded-full border border-blue-200">
@@ -74,12 +74,12 @@ export default function Contact() {
         <h1 className="pt-5 text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
           Discutons de votre projet
         </h1>
-        <p className="text-slate-600 text-sm max-w-md mx-auto">
+        <p className="text-slate-600 text-sm max-w-md mx-auto px-[5%]">
           Remplissez le formulaire ci-dessous ou envoyez-moi un message direct.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 px-[6%] md:grid-cols-3 gap-8">
 
         <div className="space-y-4 md:col-span-1">
           <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-1">
