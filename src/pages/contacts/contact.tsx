@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CheckCircle2, Link2, Mail, MapPin, Send } from 'lucide-react';
+import { CheckCircle2, Mail, MapPin, Send } from 'lucide-react';
 import Footer from '../../components/footer';
 import emailjs from '@emailjs/browser';
 import { EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from '../../const/lists';
