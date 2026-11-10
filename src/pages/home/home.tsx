@@ -88,7 +88,7 @@ function Home() {
         <section className="pt-20 px-[5%] grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm text-center">
             <div className="text-3xl font-black text-blue-600 mb-1">Commun-core 42</div>
-            <div className="text-xs font-medium text-slate-500 uppercase tracking-wider">Peer-to-peer Learing</div>
+            <div className="text-xs font-medium text-slate-500 uppercase tracking-wider">Peer-to-peer learning</div>
           </div>
           <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm text-center">
             <div className="text-3xl font-black text-blue-600 mb-1">5 Projets</div>
